@@ -12,9 +12,9 @@
 
 #include "../includes/ft_printf.h"
 
-int		put_str(char *str, int precision)
+int	put_str(char *str, int precision)
 {
-	int ret;
+	int	ret;
 
 	ret = 0;
 	while (str[ret] && ret < precision)

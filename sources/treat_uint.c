@@ -6,7 +6,7 @@
 /*   By: scuter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/24 16:17:14 by scuter            #+#    #+#             */
-/*   Updated: 2021/07/09 12:00:04 by scuter           ###   ########.fr       */
+/*   Updated: 2021/08/24 14:49:08 by scuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	write_uint(char *str, t_flags flags)
 {
-	int ret;
+	int	ret;
 
 	ret = 0;
 	if (flags.dot >= 0)
@@ -25,7 +25,7 @@ static int	write_uint(char *str, t_flags flags)
 
 static int	put_uint(char *str, t_flags flags)
 {
-	int ret;
+	int	ret;
 
 	ret = 0;
 	if (flags.minus == 1)
@@ -45,9 +45,9 @@ static int	put_uint(char *str, t_flags flags)
 	return (ret);
 }
 
-int			treat_uint(unsigned int ui, t_flags flags)
+int	treat_uint(unsigned int ui, t_flags flags)
 {
-	int ret;
+	int	ret;
 
 	ret = 0;
 	if (flags.dot == 0 && ui == 0)

@@ -6,15 +6,15 @@
 /*   By: scuter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 12:20:15 by scuter            #+#    #+#             */
-/*   Updated: 2021/06/29 10:56:43 by scuter           ###   ########.fr       */
+/*   Updated: 2021/08/24 14:46:51 by scuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
-int		treat_char(char c, t_flags flags)
+int	treat_char(char c, t_flags flags)
 {
-	int ret;
+	int	ret;
 
 	ret = 0;
 	if (flags.minus == 1)

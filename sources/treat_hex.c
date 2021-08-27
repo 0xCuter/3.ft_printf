@@ -6,7 +6,7 @@
 /*   By: scuter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/24 16:19:41 by scuter            #+#    #+#             */
-/*   Updated: 2021/06/28 10:09:27 by scuter           ###   ########.fr       */
+/*   Updated: 2021/08/24 14:47:23 by scuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	write_hex(char *hex, t_flags flags)
 {
-	int ret;
+	int	ret;
 
 	ret = 0;
 	if (flags.dot >= 0)
@@ -25,7 +25,7 @@ static int	write_hex(char *hex, t_flags flags)
 
 static int	put_hex(char *hex, t_flags flags)
 {
-	int ret;
+	int	ret;
 
 	ret = 0;
 	if (flags.minus == 1)
@@ -44,7 +44,7 @@ static int	put_hex(char *hex, t_flags flags)
 	return (ret);
 }
 
-int			treat_hex(unsigned int ui, int lower, t_flags flags)
+int	treat_hex(unsigned int ui, int lower, t_flags flags)
 {
 	char	*hex;
 	int		ret;

@@ -6,7 +6,7 @@
 /*   By: scuter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/16 11:00:24 by scuter            #+#    #+#             */
-/*   Updated: 2021/06/28 10:09:27 by scuter           ###   ########.fr       */
+/*   Updated: 2021/08/24 14:48:12 by scuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	put_ptr(char *ptr, t_flags flags)
 {
-	int ret;
+	int	ret;
 
 	ret = 0;
 	ret += put_str("0x", 2);
@@ -28,10 +28,10 @@ static int	put_ptr(char *ptr, t_flags flags)
 	return (ret);
 }
 
-int			treat_pointer(unsigned long long ull, t_flags flags)
+int	treat_pointer(unsigned long long ull, t_flags flags)
 {
-	char *ptr;
-	int ret;
+	char	*ptr;
+	int		ret;
 
 	ret = 0;
 	if (ull == 0 && flags.dot == 0)

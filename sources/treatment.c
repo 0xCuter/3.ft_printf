@@ -6,26 +6,26 @@
 /*   By: scuter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 09:56:25 by scuter            #+#    #+#             */
-/*   Updated: 2021/06/24 16:28:17 by scuter           ###   ########.fr       */
+/*   Updated: 2021/08/24 14:50:04 by scuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
-int		is_type(int c)
+int	is_type(int c)
 {
 	return ((c == 'c') || (c == 's') || (c == 'p') || (c == 'd') || (c == 'i')
-			|| (c == 'u') || (c == 'x') || (c == 'X') || (c == '%'));
+		|| (c == 'u') || (c == 'x') || (c == 'X') || (c == '%'));
 }
 
-int		is_flag(int c)
+int	is_flag(int c)
 {
 	return ((c == '-') || (c == ' ') || (c == '0') || (c == '.') || (c == '*'));
 }
 
-int		treatment(int c, t_flags flags, va_list args)
+int	treatment(int c, t_flags flags, va_list args)
 {
-	int ret;
+	int	ret;
 
 	ret = 0;
 	if (c == 'c')

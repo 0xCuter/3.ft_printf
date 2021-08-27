@@ -6,15 +6,15 @@
 /*   By: scuter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 16:09:35 by scuter            #+#    #+#             */
-/*   Updated: 2021/06/28 10:09:27 by scuter           ###   ########.fr       */
+/*   Updated: 2021/08/24 14:48:47 by scuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
-static int put_precision(char *str, t_flags flags)
+static int	put_precision(char *str, t_flags flags)
 {
-	int ret;
+	int	ret;
 
 	ret = 0;
 	if (flags.dot >= 0)
@@ -27,9 +27,9 @@ static int put_precision(char *str, t_flags flags)
 	return (ret);
 }
 
-int			treat_string(char *str, t_flags flags)
+int	treat_string(char *str, t_flags flags)
 {
-	int ret;
+	int	ret;
 
 	ret = 0;
 	if (!str)

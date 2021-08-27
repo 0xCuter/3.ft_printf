@@ -6,7 +6,7 @@
 /*   By: scuter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 11:18:36 by scuter            #+#    #+#             */
-/*   Updated: 2021/07/09 20:22:36 by scuter           ###   ########.fr       */
+/*   Updated: 2021/08/26 18:09:52 by scuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 # define FT_PRINTF_H
 
 # include "../libft/libft.h"
-#include <stdarg.h>
+# include <stdarg.h>
 
-typedef	struct		s_flags
+typedef struct s_flags
 {
 	int				already_print;
 	int				type;
@@ -25,7 +25,7 @@ typedef	struct		s_flags
 	int				zero;
 	int				dot;
 	int				star;
-}					t_flags;
+}	t_flags;
 
 int			ft_printf(const char *input, ...);
 int			is_type(int c);
@@ -34,7 +34,7 @@ int			treatment(int c, t_flags flags, va_list args);
 t_flags		flag_minus(t_flags flags);
 t_flags		flag_digit(char c, t_flags flags);
 t_flags		flag_width(va_list args, t_flags flags);
-int			flag_dot(const char *save, int i, t_flags *flags, va_list args);
+int			flag_dot(const char *str, int i, t_flags *flags, va_list args);
 int			treat_char(char c, t_flags flags);
 int			treat_width(int width, int minus, int zero);
 int			treat_string(char *str, t_flags flags);

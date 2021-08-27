@@ -6,7 +6,7 @@
 /*   By: scuter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/27 17:15:33 by scuter            #+#    #+#             */
-/*   Updated: 2021/07/09 17:44:16 by scuter           ###   ########.fr       */
+/*   Updated: 2021/08/24 14:50:48 by scuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static size_t	digits(unsigned int n)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	if (n == 0)
@@ -27,10 +27,10 @@ static size_t	digits(unsigned int n)
 	return (i);
 }
 
-char			*uitoa(unsigned int n)
+char	*uitoa(unsigned int n)
 {
-	char			*str;
-	size_t			len;
+	char	*str;
+	size_t	len;
 
 	len = digits(n);
 	str = malloc(sizeof(char) * (len + 1));

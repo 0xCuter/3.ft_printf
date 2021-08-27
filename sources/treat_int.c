@@ -6,7 +6,7 @@
 /*   By: scuter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 22:14:29 by scuter            #+#    #+#             */
-/*   Updated: 2021/07/09 11:57:38 by scuter           ###   ########.fr       */
+/*   Updated: 2021/08/24 14:47:39 by scuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	put_num(char *str, int num, t_flags flags)
 {
-	int ret;
+	int	ret;
 
 	ret = 0;
 	if (num < 0 && flags.dot >= 0)
@@ -27,7 +27,7 @@ static int	put_num(char *str, int num, t_flags flags)
 
 static int	put_int(char *str, int num, t_flags flags)
 {
-	int ret;
+	int	ret;
 
 	ret = 0;
 	if (flags.minus == 1)
@@ -47,7 +47,7 @@ static int	put_int(char *str, int num, t_flags flags)
 	return (ret);
 }
 
-int			treat_int(int num, t_flags flags)
+int	treat_int(int num, t_flags flags)
 {
 	int		tmp;
 	int		ret;
