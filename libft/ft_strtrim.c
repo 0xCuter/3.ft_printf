@@ -6,7 +6,7 @@
 /*   By: scuter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 17:08:35 by scuter            #+#    #+#             */
-/*   Updated: 2021/01/27 11:39:00 by scuter           ###   ########.fr       */
+/*   Updated: 2021/08/24 15:11:45 by scuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static int	is_separator(const char c, const char *set)
 	return (0);
 }
 
-char		*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*s2;
 	size_t	len;

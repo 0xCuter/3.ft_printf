@@ -6,7 +6,7 @@
 /*   By: scuter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/19 16:51:02 by scuter            #+#    #+#             */
-/*   Updated: 2021/01/27 11:39:00 by scuter           ###   ########.fr       */
+/*   Updated: 2021/08/24 15:11:36 by scuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *str, int c)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (str[i])

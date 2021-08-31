@@ -6,7 +6,7 @@
 /*   By: scuter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/19 13:27:57 by scuter            #+#    #+#             */
-/*   Updated: 2021/01/27 11:36:25 by scuter           ###   ########.fr       */
+/*   Updated: 2021/08/24 14:56:12 by scuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {
-	unsigned char *s1;
-	unsigned char *s2;
+	unsigned char	*s1;
+	unsigned char	*s2;
 
 	if (!n)
 		return (0);

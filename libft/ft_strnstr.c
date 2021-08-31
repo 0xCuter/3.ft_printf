@@ -6,7 +6,7 @@
 /*   By: scuter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/20 11:11:58 by scuter            #+#    #+#             */
-/*   Updated: 2021/01/27 11:39:00 by scuter           ###   ########.fr       */
+/*   Updated: 2021/08/24 15:11:11 by scuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strnstr(const char *str1, const char *str2, size_t len)
 {
-	size_t i;
+	size_t	i;
 
 	if (*str2 == 0)
 		return ((char *)str1);

@@ -6,7 +6,7 @@
 /*   By: scuter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/19 11:30:47 by scuter            #+#    #+#             */
-/*   Updated: 2021/01/27 14:40:09 by scuter           ###   ########.fr       */
+/*   Updated: 2021/08/24 15:07:52 by scuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 {
-	size_t i;
+	size_t	i;
 
 	if (!dest)
 		return (0);

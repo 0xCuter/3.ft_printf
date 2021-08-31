@@ -6,7 +6,7 @@
 /*   By: scuter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/22 15:40:13 by scuter            #+#    #+#             */
-/*   Updated: 2021/07/09 19:13:17 by scuter           ###   ########.fr       */
+/*   Updated: 2021/08/24 14:53:52 by scuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static size_t	digits(int n)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	if (n <= 0)
@@ -27,7 +27,7 @@ static size_t	digits(int n)
 	return (i);
 }
 
-char			*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char			*str;
 	size_t			len;
